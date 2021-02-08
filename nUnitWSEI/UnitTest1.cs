@@ -23,7 +23,7 @@ namespace nUnitWSEI
             element.SelectByValue("12");
         }
 
-        //[Test]
+        [Test]
         [Category("Regression Tesing")]
         public void TestMethod2()
         {
@@ -31,7 +31,7 @@ namespace nUnitWSEI
             emailTextField.SendKeys("Selenium C#");
         }
 
-      //  [Test]
+        [Test]
         [Category("Smoke testing")]
         public void TestMethod3()
         {
