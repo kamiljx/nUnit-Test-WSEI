@@ -15,7 +15,7 @@ namespace nUnitWSEI.BaseClass
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Url = "https://www.facebook.com/register";
-            IWebElement allowCookies = driver.FindElement(By.XPath(".//*[@id='u_0_h']"));
+            IWebElement allowCookies = driver.FindElement(By.XPath(".//*[@id='u_0_1e']"));
             allowCookies.Click();
 
         }
