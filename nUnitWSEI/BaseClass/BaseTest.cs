@@ -9,17 +9,20 @@ namespace nUnitWSEI.BaseClass
     {
         public IWebDriver driver;
 
-        [OneTimeSetUp]
+        [SetUp]
         public void Open()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Url = "https://www.facebook.com/register";
+            IWebElement allowCookies = driver.FindElement(By.XPath(".//*[@id='u_0_h']"));
+            allowCookies.Click();
+
         }
-        [OneTimeTearDown]
+        [TearDown]
         public void Close()
         {
-             driver.Quit();
+            // driver.Quit();
         }
 
     }
